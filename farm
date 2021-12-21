@@ -47,5 +47,5 @@ while wait() do
     wait(0.5) -- Wait for tween to finish
     HumanoidRootPart.Position = Vector3.new(-60, -360, 9491)
 
-    wait(69420)
+    wait(20)
 end
