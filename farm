@@ -1,7 +1,6 @@
-local ply = script.Parent
+local ply = workspace:WaitForChild("XxAeroxX_YT")
 local TweenService = game:GetService("TweenService")
-local Humanoid = ply:FindFirstChild("Humanoid")
-local HumanoidRootPart = Humanoid:FindFirstChild("HumanoidRootPart")
+local HumanoidRootPart = ply:WaitForChild("HumanoidRootPart")
 -- TweenInfo1 and TweenInfo2 are the information
 -- about how the tween moves.
 local TweenInfo1 = TweenInfo.new(
@@ -36,14 +35,14 @@ local Tween2 = TweenService:Create(
 
 while wait() do
     workspace.Gravity = 0
-    hrp.Position = Vector3.new(-60, 70, 1102)
-    Tween0:Play()
+    HumanoidRootPart.Position = Vector3.new(-60, 70, 1102)
+    Tween1:Play()
     wait(1) -- Wait for tween to finish
     HumanoidRootPart.Position = Vector3.new(-60, 70, 1451)
     wait(1) -- Delay for 1 second after tween completes
 
     HumanoidRootPart.Position = Vector3.new(-60, -270, 9497)
-    Tween1:Play()
+    Tween2:Play()
     wait(0.5) -- Wait for tween to finish
     HumanoidRootPart.Position = Vector3.new(-60, -360, 9491)
 
