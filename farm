@@ -24,14 +24,12 @@ local TweenInfo2 = TweenInfo.new(
 local Tween1 = TweenService:Create(
     HumanoidRootPart,                       -- The part to move
     TweenInfo1,                             -- described earlier
-    {Position = game:GetService('Workspace').BoatStages.NormalStages.CaveStage10.DarknessPart.CFrame * CFrame.new(0, 0, 1000))
-		
-	end} -- ending position
+    {Position = Vector3.new(-60, 70, 1451)} -- ending position
 )
 local Tween2 = TweenService:Create(
     HumanoidRootPart,
     TweenInfo2, 
-    {Position = game:GetService('Workspace').BoatStages.NormalStages.TheEnd.GoldenChest.Trigger.CFrame}
+    {Position = Vector3.new(-60, -360, 9491)}
 )
 
 
