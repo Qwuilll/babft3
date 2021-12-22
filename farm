@@ -31,8 +31,7 @@ local Tween1 = TweenService:Create(
 local Tween2 = TweenService:Create(
     HumanoidRootPart,
     TweenInfo2, 
-    {Position = game:GetService('Workspace').BoatStages.NormalStages.TheEnd.GoldenChest.Trigger.CFrame)
-	end}
+    {Position = game:GetService('Workspace').BoatStages.NormalStages.TheEnd.GoldenChest.Trigger.CFrame}
 )
 
 
